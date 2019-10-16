@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function sayHello() {
   var h = document.createElement("button");
