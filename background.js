@@ -6,7 +6,8 @@ chrome.runtime.onInstalled.addListener(function() {
       {
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: { hostEquals: "github.com" }
+            pageUrl: { hostEquals: "github.com" },
+            css: ["a[title='package.json']"]
           })
         ],
         actions: [new chrome.declarativeContent.ShowPageAction()]
